@@ -26,8 +26,8 @@ jobs:
 
     - name: Create Gemfile
       run: |
-        echo "source \`https://rubygems.org\`" >> Gemfile
-        echo "gem \`github-pages\`" >> Gemfile
+        echo "source 'https://rubygems.org'" >> Gemfile
+        echo "gem 'github-pages', group: :jekyll_plugins" >> Gemfile
 
     - name: Configure bundler
       run: bundle install
