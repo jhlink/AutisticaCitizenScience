@@ -24,10 +24,10 @@ jobs:
         ruby-version: 2.7.1 # Not needed with a .ruby-version file
         bundler-cache: true
 
-    - name: Create Gemfile
-      run: |
-        echo "source 'https://rubygems.org'" >> Gemfile
-        echo "gem 'github-pages', group: :jekyll_plugins" >> Gemfile
+          #    - name: Create Gemfile
+          #      run: |
+          #        echo "source 'https://rubygems.org'" >> Gemfile
+          #        echo "gem 'github-pages', group: :jekyll_plugins" >> Gemfile
 
     - name: Configure bundler
       run: bundle install
