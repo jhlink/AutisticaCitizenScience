@@ -59,11 +59,15 @@ Which generates a `.mo` binary file in the same location as the `.po`.
 ## In a django template file
 
 ```
+{% raw %}
 <h1>{% trans 'Del' %}</h1>
+{% endraw %}
 ```
 
 ```
+{% raw %}
 <h1>{% trans 'Welcome' %}</h1>
+{% endraw %}
 ```
 
 
